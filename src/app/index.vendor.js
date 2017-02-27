@@ -21,5 +21,7 @@ import 'angular-aria'
 
 import 'jquery'
 
+import 'angularjs-datepicker'
+
 // local scripts
 // import "../assets/js/...";
