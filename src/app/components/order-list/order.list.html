@@ -2,6 +2,8 @@
   <order-item  order="order"></order-item>
 </div>
 
-<p ng-show="$ctrl.noOrdersFound($ctrl.orders, $ctrl.status, $ctrl.date)">
-  No orders found for {{$ctrl.status}} status
-</p>
+<div class="row text-center">
+  <p ng-show="$ctrl.noOrdersFound($ctrl.orders, $ctrl.status, $ctrl.date)">
+    No orders found for {{$ctrl.status}} status
+  </p>
+</div>
