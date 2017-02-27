@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-4 text-center">
+    <a class="btn btn-default btn-sm" ng-class="{'btn-primary': $ctrl.status === 'Accepted'}" ng-click="$ctrl.setStatus('Accepted')">Accepted</a>
+  </div>
+
+  <div class="col-sm-4 text-center">
+    <a class="btn btn-default btn-sm" ng-class="{'btn-primary': $ctrl.status === 'Delivered'}" ng-click="$ctrl.setStatus('Delivered')">Delivered</a>
+  </div>
+
+  <div class="col-sm-4 text-center">
+    <a class="btn btn-default btn-sm" ng-class="{'btn-primary': $ctrl.status === 'All'}" ng-click="$ctrl.setStatus('All')">All</a>
+  </div>
+
+</div>
