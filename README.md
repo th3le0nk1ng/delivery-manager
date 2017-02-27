@@ -11,9 +11,23 @@ I considered the use case of a delivery driver that was accessing this through a
 
 Open a browser at http://localhost:8081
 
-## Additional Information
-This project is based off a Yeoman generator: https://github.com/STUkh/generator-angular-webpack-es6
+## Design Considerations
+
+The hierarchy of components is as follows:
+
+    <delivery-manager>
+        <order-calendar/>
+        <order-filter/>
+        <order-list>
+            <order-item/>
+        </order-list>
+    </delivery-manager>
 
 I had difficulties initializing the datepicker and having it detect the differences between moment.js and JavaScript date objects. I was originally going to use Angular UI Bootstrap Datepicker popup, but I was having issues activating the popup.
 
 I would also prefer to use an object model mapper library instead of manually creating the objects from the JSON data.
+
+## Additional Information
+This project is based off a Yeoman generator: https://github.com/STUkh/generator-angular-webpack-es6
+
+Standard style was also used: http://standardjs.com/
