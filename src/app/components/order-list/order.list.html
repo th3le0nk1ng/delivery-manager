@@ -1,0 +1,7 @@
+<div ng-repeat="order in $ctrl.orders | orderDate:$ctrl.date | orderStatus:$ctrl.status">
+  <order-item  order="order"></order-item>
+</div>
+
+<p ng-show="$ctrl.noOrdersFound($ctrl.orders, $ctrl.status, $ctrl.date)">
+  No orders found for {{$ctrl.status}} status
+</p>
