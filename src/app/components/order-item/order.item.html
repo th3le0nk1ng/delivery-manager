@@ -1,0 +1,21 @@
+<div class="row text-center align-middle">
+  <div class="col-sm-4">
+    <p>
+      {{$ctrl.order.recipient.name}}
+    </p>
+  </div>
+  <div class="col-sm-4">
+    <p>
+      {{$ctrl.order.recipient.addressLineOne}}
+    </p>
+    <p>
+      {{$ctrl.order.recipient.addressLineTwo}}
+    </p>
+  </div>
+  <div class="col-sm-4">
+    <input class="btn btn-success" type="button" ng-hide="$ctrl.order.orderStatus === 'Delivered'"
+           ng-click="$ctrl.deliverOrder($ctrl.order.id)" value="Complete Delivery"/>
+    <input class="btn btn-danger" type="button" ng-hide="$ctrl.order.orderStatus !== 'Delivered'"
+           ng-click="$ctrl.undoDelivery($ctrl.order.id)" value="Undo Delivery"/>
+  </div>
+</div>
