@@ -3,7 +3,10 @@
 </div>
 
 <div class="row text-center">
-  <p class="text-danger" ng-show="$ctrl.noOrdersFound($ctrl.orders, $ctrl.status, $ctrl.date)">
+  <p class="text-danger" ng-show="$ctrl.status !== 'All' && $ctrl.noOrdersFound($ctrl.orders, $ctrl.status, $ctrl.date)">
     No {{$ctrl.status}} orders found
+  </p>
+  <p class="text-danger" ng-show="$ctrl.status === 'All' && $ctrl.noOrdersFound($ctrl.orders, $ctrl.status, $ctrl.date)">
+    No orders found
   </p>
 </div>
