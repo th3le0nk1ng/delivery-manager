@@ -1,6 +1,6 @@
 'use strict'
 
-export default function() {
+export default function () {
   return function (orders, status) {
     if (status === 'All') {
       return orders

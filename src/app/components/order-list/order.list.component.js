@@ -10,7 +10,6 @@ export default {
   },
   templateUrl: orderListTpl,
   controller: function () {
-
     this.noOrdersFound = function (orders, status, date) {
       return status !== 'All' && _.filter(orders, (o) => o.orderStatus === status && o.deliveryDate === moment(date).format('YYYY-MM-DD')).length === 0
     }
