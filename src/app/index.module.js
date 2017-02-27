@@ -19,6 +19,7 @@ const App = angular.module(
     'ngMessages',
     'ngAria',
     'ngResource',
+    '720kb.datepicker',
 
     // routes
     indexRoutes.name,
