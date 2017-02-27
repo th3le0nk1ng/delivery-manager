@@ -1,2 +1,2 @@
-# delivery-managerd
+# delivery-manager
 H.Bloom assignment
