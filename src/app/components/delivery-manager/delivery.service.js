@@ -10,11 +10,15 @@ export default function DeliveryService () {
     orderList: _.map(orders, (o) => new Order(o)),
 
     deliverOrder (orderId) {
-      _.find(this.orderList, (o) => o.orderId === orderId).handleOrder(true)
+      _.find(this.orderList, (o) => o.id === orderId).handleOrder(true)
     },
 
     undoDelivery (orderId) {
-      _.find(this.orderList, (o) => o.orderId === orderId).handleOrder(false)
+      _.find(this.orderList, (o) => o.id === orderId).handleOrder(false)
+    },
+
+    getOrderItems (orderId) {
+      return _.find(this.orderList, (o) => o.id === orderId).getItems()
     },
 
     getOrders () {

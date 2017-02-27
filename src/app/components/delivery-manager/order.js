@@ -8,13 +8,17 @@ export default class Order {
     this.orderStatus = orderStatus
     this.deliveryDate = deliveryDate
     this.specialInstructions = specialInstructions
-    this.recipient = recipient
+    this.recipient = _.extend(recipient, { addressLineTwo: ''.concat(recipient.city, ', ', recipient.state, ' ', recipient.zipCode) })
     this.items = items
     this.totalCost = totalCost
   }
 
   handleOrder (isDelivered) {
     this.orderStatus = isDelivered ? 'Delivered' : 'Accepted'
+  }
+
+  getRecipient () {
+    return this.recipient.name
   }
 
   getItems () {
