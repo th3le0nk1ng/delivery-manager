@@ -3,7 +3,7 @@ This is a bare bones demo of a simple manager to track deliveries. The applicati
 
 ## Assumptions
 
-I considered the use case of a delivery driver that was accessing the app through a tablet. The Bootstrap classes that were used are supporting tablet screen size or bigger. However, I think adding responsiveness for mobile phones might be something to consider as well.
+I considered the use case of a delivery driver that was accessing the app through a tablet. The Bootstrap classes that were used are supporting tablet screen size or bigger. However, adding responsiveness for mobile phones would be something to consider as well.
 
 ## Install and run
 
@@ -26,11 +26,7 @@ The hierarchy of components is as follows:
         </order-list>
     </delivery-manager>
 
-I had difficulties initializing the datepicker and having it detect the differences between moment.js and JavaScript date objects. I was originally going to use Angular UI Bootstrap Datepicker popup, but I was having issues activating the popup.
-
-I would also prefer to use an object model mapper library instead of manually creating the objects from the JSON data.
-
-The styling is also an unfinished product since I spent more time on the application code. I would have also liked to use collapsible rows to show more details about the order, such as the items it consists of, special instructions, delivery note made by driver, etc.
+I would have also liked to use collapsible rows to show more details about the order, such as the items it consists of, special instructions, delivery note made by driver, etc. However, this code exercise reflects minimal requirements of a given prompt.
 
 ## Additional Information
 This project is based off a Yeoman generator: https://github.com/STUkh/generator-angular-webpack-es6
